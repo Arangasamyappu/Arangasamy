@@ -1,0 +1,157 @@
+# Arangasamy
+package InterviewPrograms;
+import java.util.Scanner;
+public class Project {
+	enum course
+    {
+       JAVA,PHYTHON,
+    }
+	         public static void main(String[] args) {
+		     Project pro = new Project();
+		     for(course c:course.values())
+		     {
+			  System.out.println(c);
+		     }
+	         System.out.println("which course do you want to join ");
+		     Scanner s = new Scanner(System.in);
+		     String a = s.nextLine();
+		     a.toLowerCase();
+		         switch(a)
+		               {
+			              case "java":
+				            System.out.println("Are you want to meet the java staff");
+				             String b = s.next();
+				try
+				  {
+					int x=Integer.parseInt(b);
+					if(x>0)
+					{
+						System.out.println("invalid data");
+						return ;
+					}
+				    }catch(Exception e)
+				  {
+				    System.out.println(e);	
+				  }
+				try
+				{
+				   if(b.equals("yes"))
+				{
+		           System.out.println("you have to tell the timing");
+			       int d = s.nextInt();
+				     if(d<12)
+					       {
+						     System.out.println("you can ask your questions to the staff");
+						       String f = s.next();
+						         if(f.equals("ok"))
+						            {
+							          System.out.println("9 to 10 && 2 to 4 are free time");
+						             }
+						          else
+						            {
+							          System.out.println("again you have to talk to staff");
+						            }
+						              System.out.println("Are you willing to attend demo class on monday");
+						              String e = s.next();
+						         if(e.equals("yes"))	
+						             {
+							            System.out.println("you can come at  morning 9am");
+						             }
+						         else if(e.equals("no"))
+						            {
+							           System.out.println("ok thanks");
+						            }
+					                   }
+		                            }
+				                      }catch(Exception e){
+					                      System.out.println(e);
+				                                             }
+	                            if(b.equals("no"))
+	                                     {
+			                                System.out.println("Are you want to know about placement servises ");
+			                                    String c= s.next();
+			                   if(c.equals("yes"))
+			                             {
+			                	            System.out.println("visit WWW.Payilagam.Com");
+			                              }
+			                     else
+			                         {
+				                           System.out.println("ok thanks");
+			                         }
+			                         }
+			                         break;
+		case "phython" :
+		pro.method();
+		break;
+	}
+	}
+	public void method()  
+	{  
+	    
+        Scanner s = new Scanner(System.in);
+		System.out.println("Are you want to meet the phython staff");
+		String B = s.next();
+		try
+		  {
+			int x=Integer.parseInt(B);
+			if(x>0)
+			{
+				System.out.println("invalid data");
+				return ;
+			}
+		    }catch(Exception e)
+		  {
+		    System.out.println(e);	
+		  }
+		try{
+		if(B.equals("yes"))
+		{
+			System.out.println("you have to tell the timing");
+			int d = s.nextInt();
+			if(d<12)
+			{
+				System.out.println("you can ask your questions to the staff");
+				String f = s.next();
+				if(f.equals("ok"))
+				{
+					System.out.println("9 to 10 && 2 to 4 are free time");
+				}
+				else
+				{
+					System.out.println("again you have to talk to staff");
+				}
+				System.out.println("Are you willing to attend demo class on monday");
+				String e = s.next();
+				if(e.equals("yes"))	
+				{
+					System.out.println("you can come at  morning 9am");
+				}
+				else if(e.equals("no"))
+				{
+					System.out.println("ok thanks");
+				}
+			    }
+	            }
+                      }catch(Exception e){
+                       System.out.println(e);
+                       }
+		                        if(B.equals("no"))
+                                    {
+	                                  System.out.println("Are you want to know about placement servises ");
+	                                    String c= s.next();
+	                                     if(c.equals("yes"))
+	                                       {
+		                                     System.out.println("visit WWW.Payilagam.Com");
+	                                       }
+	                            else
+	                                  {
+		                                 System.out.println("ok thanks");
+	                                       }
+                                             }
+	                                           }
+                                                 }
+
+		                     
+	                                 
+ 
+
